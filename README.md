@@ -1,0 +1,2 @@
+# BinarySearch
+BinarySearch methods
