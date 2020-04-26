@@ -4,7 +4,7 @@ public class BinarySearch {
     /**
      * Finds a correct index to insert an item at
      * - Description: Basically the binaryIndex finds the next index or the end index in a sorted array
-     * ## EXAMPLES:
+     * ## Examples:
      * let key = 11
      * var numbers = [9, 15, 91]
      * let idx = binaryIndex(numbers, key, 0, numbers.count) // 1
@@ -30,7 +30,7 @@ public class BinarySearch {
     }
     /*
      * - NOTE: Binary search does not find an index if the key you search for is not present in the array
-     * EXAMPLES:
+     * ## Examples:
      * let numbers = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67]
      * binarySearch(numbers, key: 43, range: 0 ..< numbers.count) // output: 13 which is the index of where the key is
      */
