@@ -7,6 +7,7 @@ class View: UIView {
 //      test2()
 //      test3()
       test4()
+//      test5()
    }
    /**
     *
@@ -42,6 +43,7 @@ class View: UIView {
    func test4() {
       var strings: [String] = ["a", "b", "d", "e", "g", "j", "m"]
       let idx: Int = BinarySearch.binaryIndex(strings, i: "f") // 1
+      Swift.print("idx:  \(idx)")
       strings.insert("f", at: idx)
       print(strings) // ["a", "b", "d", "e", "f", "g", "j", "m"]
    }

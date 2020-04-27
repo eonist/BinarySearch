@@ -9,7 +9,7 @@ public class BinarySearch {
     * let idx = binaryIndex(numbers, 11) // 1
     * numbers.insert(key, at: idx)
     * print(numbers) // [9, 11, 15, 91]
-    * - NOTE: we use a closure because protocols can't have comparable
+    * - Note: we use a closure because protocols can't have comparable
     * - Fixme: ⚠️️ Try to get rid of the closure by using Element and Collection. See the Array types.
     * - Use tuple range for start and end
     */
@@ -40,13 +40,15 @@ public class BinarySearch {
          return nil // If we get here, then the search key is not present in the array.
       } else {
          let midIndex = range.lowerBound + (range.upperBound - range.lowerBound) / 2 // Calculate where to split the array.
-         if a[midIndex] > key {// Is the search key in the left half?
+         if a[midIndex] > key { // Is the search key in the left half?
             return binarySearch(a, key: key, range: range.lowerBound..<midIndex)
-         }else if a[midIndex] < key {// Is the search key in the right half?
+         } else if a[midIndex] < key { // Is the search key in the right half?
             return binarySearch(a, key: key, range: (midIndex + 1)..<range.upperBound)
-         }else {// If we get here, then we've found the search key!
+         } else { // If we get here, then we've found the search key!
             return midIndex
          }
       }
    }
 }
+
+//public static func binaryIndex<T, P: Comparable>(_ arr: [T], i: P, range: Range<Int>? = nil, closure: (T) -> P = { $0 as! P }
