@@ -39,3 +39,6 @@ print(strings) // ["a", "b", "d", "e", "f", "g", "j", "m"]
 - https://github.com/giannif/BinarySearch/
 - https://github.com/mkeiser/BinarySearch/
 - https://github.com/ningmengjean/binary-search
+
+### Todo:
+- add github actions
