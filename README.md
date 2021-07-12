@@ -18,7 +18,7 @@ print(numbers) // [9, 11, 15, 91]
 
 ```swift
 var strings: [String] = ["a", "b", "d", "e", "g", "j", "m"]
-let idx: Int = BinarySearch.binaryIndex(strings, i: "f") // 1
+let idx: Int = BinarySearch.binaryIndex(strings, i: "f") // 4
 strings.insert("f", at: idx)
 print(strings) // ["a", "b", "d", "e", "f", "g", "j", "m"]
 ```
