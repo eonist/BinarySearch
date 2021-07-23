@@ -42,3 +42,4 @@ Swift.print("idx:  \(idx)") // 4
 
 ### Todo:
 - add github actions
+- remove xcode proj
